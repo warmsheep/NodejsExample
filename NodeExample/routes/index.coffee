@@ -1,5 +1,5 @@
 
 # GET users listing.
 exports.index = (req, res) ->
-  res.render 'index', title : 'MyWebsite'
+  res.render 'index', sitetitle : 'MyWebsite'
 

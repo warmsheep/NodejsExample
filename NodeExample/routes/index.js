@@ -6,4 +6,11 @@
     });
   };
 
+  exports.about = function(req, res) {
+	  
+    return res.render('index', {
+      sitetile: 'abouta'
+    });
+  };
+
 }).call(this);

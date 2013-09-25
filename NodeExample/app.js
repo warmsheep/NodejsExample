@@ -42,6 +42,10 @@
 
   app.get('/about', routes.about);
 
+  app.post('/users/listAll', function(req, res) {
+    return res.send(req.body);
+  });
+
   http.createServer(app).listen(app.get('port'), function() {
     return console.log('Express server listening on port ' + app.get('port'));
   });

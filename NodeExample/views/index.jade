@@ -9,7 +9,17 @@ include head
 	
 	p 	哈哈哈
 		哈哈
-	script
-		alert("1")
-	
+
+	h2 Form example
+	form(method='post',action='/users/listAll')
+		fieldset
+			legend Add a user
+			p
+				label First name
+				input(name='user[first_name]')
+			p
+				label Last name
+				input(name='user[surname]')
+			p
+				input(type='submit',value='Save')
 		

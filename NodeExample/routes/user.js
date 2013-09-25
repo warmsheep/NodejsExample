@@ -4,4 +4,8 @@
     return res.send('respond with a resource');
   };
 
+  exports.get = function(req, res) {
+    return res.send("user id: " + req.params.id);
+  };
+
 }).call(this);

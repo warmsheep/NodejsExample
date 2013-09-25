@@ -28,6 +28,8 @@ app.get '/users', user.list
 app.get '/about', routes.about
 app.post '/users/listAll',(req,res) ->
 	res.send(req.body)
+	
+app.get '/user/:id', user.get
 
 http.createServer(app).listen app.get('port'), ->
   console.log 'Express server listening on port ' + app.get('port')

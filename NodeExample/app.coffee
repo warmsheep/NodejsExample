@@ -2,6 +2,13 @@
 
 express = require 'express'
 routes = require './routes'
+mongoose = require 'mongoose'
+mongoose.connect 'mongodb://location/local',(err)->
+  if !err
+    console.log 'connected to MongoDB!'
+  else
+    throw err
+
 user = require './routes/user'
 http = require 'http'
 path = require 'path'

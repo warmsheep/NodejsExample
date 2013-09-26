@@ -24,4 +24,7 @@ exports.readFile = (req, res) ->
       res.send data
     else
       throw err
+      
+exports.readEnv = (req, res) ->
+  res.send process.env.PATH
   

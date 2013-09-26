@@ -36,4 +36,8 @@
     });
   };
 
+  exports.readEnv = function(req, res) {
+    return res.send(process.env.PATH);
+  };
+
 }).call(this);

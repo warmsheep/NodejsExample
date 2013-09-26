@@ -31,6 +31,7 @@ app.post '/users/listAll',(req,res) ->
 	
 app.get '/user/:id', user.get
 app.get '/saveFile', user.saveFile
+app.get '/readFile', user.readFile
 
 http.createServer(app).listen app.get('port'), ->
   console.log 'Express server listening on port ' + app.get('port')

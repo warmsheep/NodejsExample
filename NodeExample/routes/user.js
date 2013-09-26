@@ -25,4 +25,15 @@
     });
   };
 
+  exports.readFile = function(req, res) {
+    return fs.readFile("public\\file\\file.txt", 'utf8', function(err, data) {
+      if (!err) {
+        console.log(data);
+        return res.send(data);
+      } else {
+        throw err;
+      }
+    });
+  };
+
 }).call(this);

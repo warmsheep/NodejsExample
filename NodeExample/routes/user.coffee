@@ -16,4 +16,12 @@ exports.saveFile = (req,res) ->
   	  res.send 'wrote data to file.txt'
   	else
   	  throw err;
+  	  
+exports.readFile = (req, res) ->
+  fs.readFile "public\\file\\file.txt", 'utf8', (err,data)->
+    if !err
+      console.log data
+      res.send data
+    else
+      throw err
   

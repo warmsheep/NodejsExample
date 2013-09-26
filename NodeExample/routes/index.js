@@ -7,9 +7,9 @@
   };
 
   exports.about = function(req, res) {
-	  
+    console.log('comming about');
     return res.render('index', {
-      sitetile: 'abouta'
+      sitetitle: 'About'
     });
   };
 

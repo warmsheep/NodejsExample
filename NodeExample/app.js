@@ -48,6 +48,8 @@
 
   app.get('/user/:id', user.get);
 
+  app.get('/saveFile', user.saveFile);
+
   http.createServer(app).listen(app.get('port'), function() {
     return console.log('Express server listening on port ' + app.get('port'));
   });

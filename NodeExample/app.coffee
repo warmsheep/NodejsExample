@@ -3,7 +3,7 @@
 express = require 'express'
 routes = require './routes'
 mongoose = require 'mongoose'
-mongoose.connect 'mongodb://location/local',(err)->
+mongoose.connect 'mongodb://localhost/todo_development',(err)->
   if !err
     console.log 'connected to MongoDB!'
   else
